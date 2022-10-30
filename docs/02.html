@@ -87,26 +87,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Home: Course Information</title>
+  <title>Home: 2. Describing Data</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Home: Course Information"/>
+  <meta property="og:title" content="Home: 2. Describing Data"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Home"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Home: Course Information"/>
+  <meta property="twitter:title" content="Home: 2. Describing Data"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Course Information"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["2. Describing Data"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2394,7 +2394,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Course Information","authors":[]}
+{"title":"2. Describing Data","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2431,7 +2431,7 @@ Lesson
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Course Information</h1>
+<h1>2. Describing Data</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2439,174 +2439,261 @@ Lesson
 
 
 <div class="d-article">
-<h2 id="course-learning-outcomes"><em>Course Learning Outcomes</em></h2>
-<p>At the end of the course, students should be able to:</p>
-<ul>
-<li><p>Explain the concept, the use and the application of basic
-statistical tools in descriptive and inferential statistics.
-(C2)</p></li>
-<li><p>Determine appropriate statistical solution and interpreting the
-real world problem. (C5)</p></li>
-<li><p>Propose the use of descriptive statistics in the area of
-computing. (A3)</p></li>
-</ul>
-<h2 id="course-description"><em>Course Description</em></h2>
-<p>This course introduces the basic statistical concepts in general
-applications. The topics include basic concepts of sampling methods,
-method of data collection, introductory methods in descriptive and
-inferential statistics. Specific topics include methods of describing
-data, correlation &amp; regression analysis, time series analysis, index
-numbers and probability. Students will be exposed to statistical project
-which involve analyzing primary or secondary data in enhancing their
-understanding in solving real problems. Statistical Analysis using Excel
-or SPSS will be introduced.</p>
-<h2 id="syllabus-content"><em>Syllabus Content</em></h2>
-<ol type="1">
-<li>Introduction to Statistics
-<ul>
-<li>Definition of statistics<br />
+<style>
+html {
+  scroll-behavior: smooth;
+}
+d-article {
+    contain: none;
+  }
+#TOC {
+  position: fixed;
+  z-index: 50;
+  background: #ebebeb;     /* or   background: white; */
+  padding: 10px;           /* optional */
+  border-radius: 5px;      /* optional */
+  }
+
+/* Hide the ToC when resized to mobile or tablet:  480px, 768px, 900px */
+@media screen and (max-width: 900px) {
+#TOC {
+    position: relative;
+  }
+}
+</style>
+<h1 id="measures-of-central-tendency">Measures of Central Tendency</h1>
+<h2 id="ungrouped-data">Ungrouped Data</h2>
+<h3 id="mean">Mean</h3>
+<p>The mean is the sum of the values, divided by the total number of
+values.<br />
+For population,<br />
+<span class="math display">\[
+\mu = \frac{\sum{X}}{N}
+\]</span> where N is number of elements in the population.<br />
+For sample,<br />
+<span class="math display">\[
+\bar{x} = \frac{\sum{x}}{n}
+\]</span> where n is number of elements in the sample.</p>
+<p><strong>Example 1</strong></p>
+<p>A company has five departments. The number of workers in five
+departments are 24, 13, 19, 26 and 11 respectively. What is the mean for
+the number of workers in a department?</p>
+<p>Total number of workers in five department is</p>
+<p>Mean for the number of workers in a department is Example 2 A sample
+of five executives received the following bonuses last year (in RM’000).
+14, 15, 17, 16, 15 Find the mean bonus of the five executives.</p>
+<p>The mean bonus is</p>
+<p>Therefore, the mean bonus of the five executives is RM15400</p>
+<h3 id="median">Median</h3>
+<p>The median is the midpoint of the data array.</p>
+<p>Steps in computing the median of raw data Step 1 Arrange the data in
+order Step 2 If there is an odd number of observations in the data, the
+median is the middle value of the data. However, if there is an even
+number of observations in the data, the median is the average of the two
+middle numbers.</p>
+<p><strong>Example 3</strong><br />
+Find the median for ages of seven preschool children. The ages are 1 3 4
+2 3 5 1</p>
+<p><em>Solution:</em><br />
+1 1 2 3 3 4 5</p>
+<p>So, median age is 3 years old</p>
+<p><strong>Example 4</strong><br />
+The number of cloudy days for the top 6 cloudiest cities is shown. 209
+223 211 227 213 240<br />
+Find the median.</p>
+<p><em>Solution:</em><br />
+209 211 213 223 227 240</p>
+<p>Finding median in a large number of observations If there are large
+number of observations, the median is determined by computing the term
+in an ordered array. For example, if we have 77 data,</p>
+<p>Location of median = The median is the 39th observation in the data
+set</p>
+<p><strong>Example 5</strong><br />
+A real estate broker intends to determine the median selling price
+(RM’000) of 10 houses listed below.<br />
+67 105 148 5,250 91 116 167 95 122 189</p>
+<p><em>Solution:</em><br />
+Arrange data in ascending order.<br />
+67 91 95 105 116 122 148 167 189 5,250</p>
+<p>Location of median = <span
+class="math inline">\(\frac{10+1}{2}=5.5\)</span></p>
+<p>Median = <span
+class="math inline">\(\frac{116+122}{2}=119\)</span></p>
+<p>The price of RM119000 is a reasonable of the price of 10 houses.</p>
+<h3 id="mode">MODE</h3>
+<p>The mode is the value that occurs frequently in a data set. The mode
+is located by arranging the data in ascending or descending order.</p>
+<p><strong>Example 6</strong><br />
+The following data represent the duration (in days) of U.S. Space
+Shuttle voyages for the years 1992-1994. Find the mode<br />
+8 9 9 14 8 8 10 7 6 9 7 8 10 14 11 8 14 11</p>
+<p><em>Solution:</em><br />
+Arrange the data in ascending order.<br />
+6 7 7 8 8 8 8 8 9 9 9 10 10 11 11 14 14 14<br />
+therefore, the mode is 8.</p>
+<h1 id="measure-of-position">Measure of position</h1>
+<aside>
+<a href="images/qmt181/Chapter%204%20Topic%202%20-%20MOP.pdf">Download
+Slides - Measures of Position</a>
+</aside>
+<p>Box-and-whisker plot provides a useful graphical representation of
+the data.</p>
+<h3 id="quartiles">Quartiles</h3>
+<p>The quartiles are descriptive measures that split the ordered data
+into four quarters with three dividers.</p>
+<center>
+First quartile (Q1)<br />
+Second quartile (Q2)<br />
+Third quartile(Q3)
+</center>
+<p>Rules for obtaining the quartile values</p>
+<ol type="a">
+<li>If the positioning point is an integer, the numerical observation on
+the positioning point is chosen for the quartiles.<br />
 </li>
-<li>Terms in statistics<br />
+<li>If the point is halfway between two integers, the average of their
+corresponding observations is selected.<br />
 </li>
-<li>Types of statistics<br />
-</li>
-<li>Sources of data<br />
-</li>
-<li>Types of variable<br />
-</li>
-<li>Scale of measurement<br />
-</li>
-<li>Sampling techniques<br />
-</li>
-<li>Data Collection Methods<br />
-</li>
-</ul></li>
-<li>Describing Data
-<ul>
-<li>Data organization and presentation<br />
-</li>
-<li>Measures of Central Tendency<br />
-</li>
-<li>Measures of Location<br />
-</li>
-<li>Measures of Dispersion<br />
-</li>
-<li>Measures of Skewness<br />
-</li>
-</ul></li>
-<li>Correlation &amp; Simple Linear Regression
-<ul>
-<li>Correlation (Pearson’s Product Moment Correlation)<br />
-</li>
-<li>Simple linear regression<br />
-</li>
-</ul></li>
-<li>Index Numbers
-<ul>
-<li>Types of index numbers<br />
-</li>
-<li>Calculate and explain unweighted index numbers<br />
-</li>
-<li>Calculate and explain weighted index number<br />
-</li>
-</ul></li>
-<li>Time Series Analysis
-<ul>
-<li>Component of time series<br />
-</li>
-<li>Multiplicative time series model<br />
-</li>
-<li>Trend Analysis (Moving Average Method)<br />
-</li>
-<li>Seasonal Variations<br />
-</li>
-<li>Forecasting<br />
-</li>
-</ul></li>
-<li>Probability
-<ul>
-<li>Set theory<br />
-</li>
-<li>Addition rules<br />
-</li>
-<li>Multiplication rules and conditional probability<br />
-</li>
-<li>Counting Rules (Permutation and Combination)<br />
-</li>
-<li>Tree Diagram<br />
-</li>
-<li>Bayes’ Theorem</li>
-</ul></li>
+<li>If the positioning point is neither an integer nor a value halfway
+between two integer, proportionate between the two integers.</li>
 </ol>
-<h2 id="teaching-methodology"><em>Teaching Methodology</em></h2>
-<p>Lectures, Tutorial, Discussion</p>
-<h2 id="assessment"><em>Assessment</em></h2>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>ITEM</strong></th>
-<th style="text-align: center;"><strong>WEIGHT</strong></th>
-<th style="text-align: center;"><strong>REMARK </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Test 1 (Topic 1 &amp; 2)</td>
-<td style="text-align: center;">15%</td>
-<td style="text-align: center;">CLO1</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Test 2 (Topic 3 &amp; 5)</td>
-<td style="text-align: center;">15%</td>
-<td style="text-align: center;">CLO2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Quiz (Topic 4)</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">CLO2</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Assignment (Topic 6)</td>
-<td style="text-align: center;">5%</td>
-<td style="text-align: center;">CLO2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Group Project (Topic 1 &amp; Topic
-2)</td>
-<td style="text-align: center;">10%</td>
-<td style="text-align: center;">CLO3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Final Examination</td>
-<td style="text-align: center;">50%</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="recommended-text"><em>Recommended Text</em></h2>
-<ol type="1">
-<li>Allan Bluman, Elementary Statistics: A Step By Step Approach, 8,
-McGraw-Hill Science/Engineering/Math, 2013, ISBN: 0073534986</li>
-</ol>
-<h2 id="references"><em>References</em></h2>
-<ol type="1">
-<li>William G Marchal, Samuel A Wathen Douglas A Lind, Statistical
-Techniques in Business and Economics - 13th Edition, 13, McGraw Hill
-Companies, 2007, ISBN: 9780070667075.<br />
-</li>
-<li>Prem S. Mann, Introductory Statistics, 8, John Wiley &amp; Sons,
-2010, ISBN: 97804704446652.<br />
-</li>
-<li>Muhammad Rozi, M &amp; Faridah, A.H, Business Statistics, Oxford
-Fajar Bakti Sdn. Bhd, 2011, ISBN: 13-97898345093.</li>
-<li>Lau Too Kya, Phang Yook Ngor, Zainuddin Awang, Statistics for UiTM,
-2, Penerbit Fajar Bakti Sdn. Bhd., 2009, ISBN: n/a<br />
-</li>
-<li>Halilah Haron, Understanding Statistics with SPSS, 1, University
-Publication Center (UPENA), 2010, ISBN: 9789673631520.</li>
-</ol>
-<hr />
-<div class="sourceCode" id="cb1"><pre
+<p><strong>Example 7</strong></p>
+<p>The three-year annual returns of 14 low-risk funds arranged in
+ascending order are given as follows.</p>
+<center>
+9.77 11.35 12.46 13.80 15.47 17.48 18.37 18.47 18.61 20.72 21.49 22.47
+31.50 38.16
+</center>
+<p>Find the first and third quartiles.</p>
+<p><em>Solution</em></p>
+<p>Position of first quartile, <span
+class="math inline">\(Q_1\)</span></p>
+<p><span class="math display">\[
+\begin{align}
+Q_1\ position&amp;= \frac{n+1}{4} \\
+&amp;= \frac{14+1}{4} \\
+&amp;= 3.75 \\
+\\
+x_3 &amp;= 12.46\ and\ \\
+x_4 &amp;= 13.80 \\
+Q_1 &amp;= 12.46 + 0.75(13.80-12.46) \\
+&amp;= 13.465
+\end{align}
+\]</span></p>
+<p>Position of third quartile, <span
+class="math inline">\(Q_3\)</span></p>
+<p><span class="math display">\[
+\begin{align}
+Q_3\ position&amp;= 3(\frac{n+1}{4}) \\
+&amp;= 3(\frac{14+1}{4}) \\
+&amp;= 11.25 \\
+\\
+x_{11} &amp;= 21.49\ and\ \\
+x_{12} &amp;= 22.47 \\
+Q_1 &amp;= 21.49 + 0.25(22.47-21.49) \\
+&amp;= 21.735
+\end{align}
+\]</span></p>
+<h2 id="grouped-data">GROUPED DATA</h2>
+<h3 id="mean-1">MEAN</h3>
+<p>For grouped data, each class interval is represented by the mid-point
+of the interval, X_i.</p>
+<p><strong>Example 8</strong><br />
+The table shows the years of working experience for 120 employees of
+Jimmy’s Company.</p>
+<p><em>Solution:</em></p>
+<h3 id="median-1">MEDIAN</h3>
+<p>For grouped data, median is calculated as follows.</p>
+<p>where <span class="math inline">\(n\)</span> = sample size,<br />
+<span class="math inline">\(L_m\)</span> = lower limit of the median
+class,<br />
+<span class="math inline">\(f_{m-1}\)</span> = cumulative frequency
+before the median class<br />
+<span class="math inline">\(f_m\)</span> = frequency of the median class
+and<br />
+<span class="math inline">\(c\)</span> = median class size</p>
+<p><strong>Example 9</strong><br />
+Using the data in example 8, compute the median</p>
+<p><em>Solution</em>:</p>
+<p>Step 1: Obtain the cumulative frequencies</p>
+<p>Step 2: Identify the class that contains the median and obtain the
+median location.</p>
+<p>Step 3: Apply the formula</p>
+<h3 id="mode-1">MODE</h3>
+<p>The mode can be estimated by using histogram.</p>
+<p>Step 1: A histogram is drawn for the data and the class with the
+highest frequency (modal class) is identify.<br />
+Step 2: Two lines are drawn at the top of the column, one from the top
+right-hand corner to the top right-hand corner of the class before the
+modal class, and another from the top left-hand corner to the top
+left-hand corner of the column after the modal class.<br />
+Step 3: At the point of intersection, a vertical line is drawn towards
+the horizontal axis of the histogram.<br />
+Step 4: The variable value is the mode of the distribution.</p>
+<p>Mode can also be calculated using the formula.</p>
+<p>where<br />
+L = lower boundary of the class containing mode.<br />
+c = size of the class containing mode<br />
+f0 = frequency of the class containing mode<br />
+f1 = frequency of the class before the class containing mode<br />
+f2 = frequency of the class after the class containing mode</p>
+<p><strong>Example 10</strong><br />
+Using the data in example 8, compute the mode.</p>
+<p><em>Solution</em>:<br />
+The modal class is 9 – 12 since the frequency of the class is the
+highest.</p>
+<h1 id="skewness">Skewness</h1>
+<p>Measure the lack of symmetry in a data distribution The relationship
+between mean, median and mode Measure of position The position of
+grouped data can be measured by the first and the third quartile denoted
+as Q_1_ and Q_3_ respectively.</p>
+<p>Method 1<br />
+The first (Q1) and third (Q3) quartiles</p>
+<p>Step 1: Obtain the cumulative frequencies<br />
+Step 2: Identify the first and third quartile classes.<br />
+Step 3: Find the first and third quartile</p>
+<pre><code>    First quartile, Where  
+    L1 = lower limit of the first quartile class  
+    n = number of observations
+    fm-1 = cumulative frequency before the first quartile class  
+    f1 = frequency of the first quartile class  
+    C1 = first quartile class size  
+    
+    Third quartile, where  
+    L3 = lower limit of the first quartile class  
+    n = number of observations  
+    fm-1 = cumulative frequency before the third quartile class  
+    f3 = frequency of the first quartile class  
+    C3 = third quartile class size  </code></pre>
+<p><strong>Example 11</strong><br />
+Table below shows the distribution of test scores obtained by 42
+students in a Statistics class. Calculate Q1 and Q3</p>
+<p>Step 1:<br />
+Step 2: Identify the location or position of the first and third
+quartiles<br />
+Step 3: The value of Q1 and Q3 are as follows</p>
+<p>Method 2 Using Ogive (cumulative frequency curve)</p>
+<p>Step 1: Mark off the first and third quartile location on the
+y-axis.<br />
+Step 2: From each of the quartile location marked on the y-axis, draw
+crosses the x-axis is the estimated quartile value.</p>
+<p>Exercise The speed of 120 cars that drove through a specific sharp
+corner on a federal road is given in the table below. Find mean, median
+and mode speed.</p>
+<h1 id="measures-of-dispersion">Measures of Dispersion</h1>
+<aside>
+<a href="images/qmt181/Chapter%204%20Topic%203%20-%20MOD.pdf">Download
+Slides - Measures of Dispersion</a>
+</aside>
+<p>Measures of dispersion give us a value that can be used to describe a
+set of data as a whole. Just knowing the measures of central tendency
+value of a data set is not enough for us to describe the distribution of
+that data. The centralized measure does not provide information on
+whether the data is widely distributed or otherwise.<br />
+The measure of dispersion is based on the mean value. If the observed
+values are close to the mean of the distribution then the dispersion of
+the data is small and vice versa.</p>
+<div class="sourceCode" id="cb2"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2615,6 +2702,15 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

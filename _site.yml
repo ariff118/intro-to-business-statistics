@@ -1,12 +1,27 @@
 name: "."
-title: "Introduction to Business Statistics"
+title: "Home"
 description: |
   Introduction to Business Statistics
 output_dir: "docs"
+theme: introstats-theme.css
 navbar:
   right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
+    - text: "Course Information"
       href: about.html
+    - text: "Weekly Schedule"
+      href: sow.html
+    - text: "Lesson"
+      menu:
+        - text: "1. Introduction to Statistics"
+          href: 01.html
+        - text: "2. Describing Data"
+          href: 02.html
+        - text: "3. Correlation & Simple Linear Regression"
+          href: 03.html
+        - text: "4. Index Numbers"
+          href: 04.html
+        - text: "5. Time Series Analysis"
+          href: 05.html
+        - text: "6. Probability"
+          href: 06.html
 output: distill::distill_article

@@ -1,0 +1,296 @@
+---
+title: "2. Describing Data"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+d-article {
+    contain: none;
+  }
+#TOC {
+  position: fixed;
+  z-index: 50;
+  background: #ebebeb;     /* or   background: white; */
+  padding: 10px;           /* optional */
+  border-radius: 5px;      /* optional */
+  }
+
+/* Hide the ToC when resized to mobile or tablet:  480px, 768px, 900px */
+@media screen and (max-width: 900px) {
+#TOC {
+    position: relative;
+  }
+}
+</style>
+
+# Measures of Central Tendency
+
+## Ungrouped Data
+
+### Mean
+
+The mean is the sum of the values, divided by the total number of
+values.\
+For population,\
+$$
+\mu = \frac{\sum{X}}{N}
+$$ where N is number of elements in the population.\
+For sample,\
+$$
+\bar{x} = \frac{\sum{x}}{n}
+$$ where n is number of elements in the sample.
+
+**Example 1**
+
+A company has five departments. The number of workers in five
+departments are 24, 13, 19, 26 and 11 respectively. What is the mean for
+the number of workers in a department?
+
+Total number of workers in five department is
+
+Mean for the number of workers in a department is Example 2 A sample of
+five executives received the following bonuses last year (in RM'000).
+14, 15, 17, 16, 15 Find the mean bonus of the five executives.
+
+The mean bonus is
+
+Therefore, the mean bonus of the five executives is RM15400
+
+### Median 
+
+The median is the midpoint of the data array.
+
+Steps in computing the median of raw data Step 1 Arrange the data in
+order Step 2 If there is an odd number of observations in the data, the
+median is the middle value of the data. However, if there is an even
+number of observations in the data, the median is the average of the two
+middle numbers.  
+
+**Example 3**  
+Find the median for ages of seven preschool children. The ages are 
+1 3 4 2 3 5 1
+
+*Solution:*  
+1 1 2 3 3 4 5
+
+So, median age is 3 years old
+
+**Example 4**  
+The number of cloudy days for the top 6 cloudiest cities is shown. 
+209 223 211 227 213 240  
+Find the median. 
+
+*Solution:*  
+209 211 213 223 227 240
+
+Finding median in a large number of observations If there are large
+number of observations, the median is determined by computing the term
+in an ordered array. For example, if we have 77 data,  
+
+Location of median = The median is the 39th observation in the data set
+
+**Example 5**  
+A real estate broker intends to determine the median selling price (RM'000) of 10 houses listed below.  
+67 105 148 5,250 91 116 167 95 122 189  
+
+*Solution:*  
+Arrange data in ascending order.  
+67 91 95 105 116 122 148 167 189 5,250  
+
+Location of median = $\frac{10+1}{2}=5.5$
+
+Median = $\frac{116+122}{2}=119$  
+
+The price of RM119000 is a reasonable of the price of 10 houses.  
+
+### MODE  
+The mode is the value that occurs frequently in a data set. The mode is located by arranging the data in ascending or descending order.  
+
+**Example 6**  
+The following data represent the duration (in days) of U.S. Space Shuttle voyages for the years 1992-1994. Find the mode  
+8 9 9 14 8 8 10 7 6 9 7 8 10 14 11 8 14 11  
+
+*Solution:*  
+Arrange the data in ascending order.  
+6 7 7 8 8 8 8 8 9 9 9 10 10 11 11 14 14 14  
+therefore, the mode is 8.  
+
+# Measure of position  
+
+<aside>
+[Download Slides - Measures of Position](images/qmt181/Chapter 4 Topic 2 - MOP.pdf)
+</aside>  
+
+Box-and-whisker plot provides a useful graphical representation of the data. 
+
+### Quartiles   
+The quartiles are descriptive measures that split the ordered data into four quarters with three dividers. 
+
+<center>
+First quartile (Q1)  
+Second quartile (Q2)  
+Third quartile(Q3)  
+</center>
+
+Rules for obtaining the quartile values  
+
+(a) If the positioning point is an integer, the numerical observation on the positioning point is chosen for the quartiles.  
+(b) If the point is halfway between two integers, the average of their corresponding observations is selected.  
+(c) If the positioning point is neither an integer nor a value  halfway between two integer, proportionate between  the two integers.  
+
+**Example 7**  
+
+The three-year annual returns of 14 low-risk funds arranged in ascending order are given as follows.  
+
+<center>
+9.77 11.35 12.46 13.80 15.47 17.48 18.37 18.47 18.61 20.72 21.49 22.47 31.50 38.16
+</center>  
+
+Find the first and third quartiles.
+
+*Solution*  
+
+Position of first quartile, $Q_1$  
+
+$$
+\begin{align}
+Q_1\ position&= \frac{n+1}{4} \\
+&= \frac{14+1}{4} \\
+&= 3.75 \\
+\\
+x_3 &= 12.46\ and\ \\
+x_4 &= 13.80 \\
+Q_1 &= 12.46 + 0.75(13.80-12.46) \\
+&= 13.465
+\end{align}
+$$
+
+Position of third quartile, $Q_3$ 
+
+$$
+\begin{align}
+Q_3\ position&= 3(\frac{n+1}{4}) \\
+&= 3(\frac{14+1}{4}) \\
+&= 11.25 \\
+\\
+x_{11} &= 21.49\ and\ \\
+x_{12} &= 22.47 \\
+Q_1 &= 21.49 + 0.25(22.47-21.49) \\
+&= 21.735
+\end{align}
+$$
+
+## GROUPED DATA  
+
+### MEAN  
+
+For grouped data, each class interval is represented by the mid-point of the interval, X_i.
+
+**Example 8**  
+The table shows the years of working experience for 120 employees of Jimmy's Company.  
+
+*Solution:*  
+
+### MEDIAN  
+
+For grouped data, median is calculated as follows.  
+
+
+where 
+$n$ = sample size,  
+$L_m$ = lower limit of the median class,  
+$f_{m-1}$ = cumulative frequency before the median class  
+$f_m$ = frequency of the median class and  
+$c$ = median class size  
+
+**Example 9**  
+Using the data in example 8, compute the median  
+
+*Solution*:  
+
+Step 1: Obtain the cumulative frequencies  
+
+Step 2: Identify the class that contains the median and obtain the median location.  
+
+Step 3: Apply the formula  
+
+
+### MODE  
+The mode can be estimated by using histogram.  
+
+Step 1: A histogram is drawn for the data and the class with the highest frequency (modal class) is identify.  
+Step 2: Two lines are drawn at the top of the column, one from the top right-hand corner to the top right-hand corner of the class before the modal class, and another from the top left-hand corner to the top left-hand corner of the column after the modal class.  
+Step 3: At the point of intersection, a vertical line is drawn towards the horizontal axis of the histogram.  
+Step 4: The variable value is the mode of the distribution.  
+
+Mode can also be calculated using the formula.  
+
+
+where  
+L = lower boundary of the class containing mode.  
+c = size of the class containing mode  
+f0 = frequency of the class containing mode  
+f1 = frequency of the class before the class containing mode  
+f2 = frequency of the class after the class containing mode  
+
+**Example 10**  
+Using the data in example 8, compute the mode.  
+
+*Solution*:  
+The modal class is 9 -- 12 since the frequency of the class is the highest.  
+
+# Skewness  
+
+Measure the lack of symmetry in a data distribution The relationship between mean, median and mode Measure of position The position of grouped data can be measured by the first and the third quartile denoted as Q_1_ and Q_3_ respectively.  
+
+Method 1  
+The first (Q1) and third (Q3) quartiles  
+
+Step 1: Obtain the cumulative frequencies  
+Step 2: Identify the first and third quartile classes.  
+Step 3: Find the first and third quartile  
+        
+        First quartile, Where  
+        L1 = lower limit of the first quartile class  
+        n = number of observations
+        fm-1 = cumulative frequency before the first quartile class  
+        f1 = frequency of the first quartile class  
+        C1 = first quartile class size  
+        
+        Third quartile, where  
+        L3 = lower limit of the first quartile class  
+        n = number of observations  
+        fm-1 = cumulative frequency before the third quartile class  
+        f3 = frequency of the first quartile class  
+        C3 = third quartile class size  
+
+**Example 11**  
+Table below shows the distribution of test scores obtained by 42 students in a Statistics class. Calculate Q1 and Q3  
+
+Step 1:  
+Step 2: Identify the location or position of the first and third quartiles  
+Step 3: The value of Q1 and Q3 are as follows  
+
+Method 2 Using Ogive (cumulative frequency curve)  
+
+Step 1: Mark off the first and third quartile location on the y-axis.  
+Step 2: From each of the quartile location marked on the y-axis, draw crosses the x-axis is the estimated
+quartile value.  
+
+Exercise The speed of 120 cars that drove through a specific sharp corner on a federal road is given in the table below. Find mean, median and mode speed.  
+
+# Measures of Dispersion  
+
+<aside>
+[Download Slides - Measures of Dispersion](images/qmt181/Chapter 4 Topic 3 - MOD.pdf)  
+</aside>
+
+Measures of dispersion give us a value that can be used to describe a set of data as a whole. Just knowing the measures of central tendency value of a data set is not enough for us to describe the distribution of that data. The centralized measure does not provide information on whether the data is widely distributed or otherwise.  
+The measure of dispersion is based on the mean value. If the observed values are close to the mean of the distribution then the dispersion of the data is small and vice versa.  
+

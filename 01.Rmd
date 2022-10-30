@@ -1,0 +1,517 @@
+---
+title: "1. Introduction to Statistics "
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+By the end of this topic, you should be able to:  
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+**Subtopics**  
+:::  
+
+::: {.column width="5%"}  
+\ 
+<!-- an empty Div (with a whitespace), serving as
+a column separator -->
+:::  
+
+::: {.column width="65%"}  
+**Objectives**  
+:::  
+
+::::::   
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+Introduction to statistics  
+:::  
+
+::: {.column width="5%"}  
+\   
+<!-- an empty Div (with a whitespace), serving as  
+a column separator -->  
+:::  
+
+::: {.column width="65%"}  
+- Understand why people study statistics   
+- Distinguish between descriptive and inferential statistics  
+- Distinguish between qualitative variable and quantitative variable  
+:::  
+
+::::::  
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+Statistical terms  
+:::  
+
+::: {.column width="5%"}  
+\ 
+<!-- an empty Div (with a whitespace), serving as
+a column separator -->
+:::  
+
+::: {.column width="65%"}  
+- Understand some statistical terms  
+:::  
+
+::::::  
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+Methods of data collection   
+:::  
+
+::: {.column width="5%"}  
+\ 
+<!-- an empty Div (with a whitespace), serving as
+a column separator -->
+:::  
+
+::: {.column width="65%"}  
+- Distinguish among nominal, ordinal, interval and ratio  
+- Distinguish between primary data and secondary data  
+- Understand various of data collection methods  
+:::  
+
+::::::  
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+Statistical terms  
+:::  
+
+::: {.column width="5%"}  
+\ 
+<!-- an empty Div (with a whitespace), serving as
+a column separator -->
+:::  
+
+::: {.column width="65%"}  
+- Understand some statistical terms  
+:::  
+
+::::::  
+
+:::::: {style="display:flex; "}  
+
+::: {.column width="30%"}  
+Sampling Techniques  
+:::  
+
+::: {.column width="5%"}  
+\ 
+<!-- an empty Div (with a whitespace), serving as
+a column separator -->
+:::  
+
+::: {.column width="65%"}  
+- Distinguish some of the sampling techniques : Random and Non-Random Sampling  
+:::  
+
+::::::  
+
+
+## Definition of Statistics:
+
+> Method of collecting, organizing, summarizing, presenting, analyzing and interpreting  data (information) in a convenient and informative way to assist in making more effective decisions.
+
+Statistics can be categorized as descriptive statistics and inferential/inductive statistics.  
+
+- Descriptive Statistics is designed to describe, without going any further; that is without attempting to infer or conclude anything that goes beyond the data themselves.  
+  
+- Inferential Statistics is a method used to determine something about a population, based on sample.
+
+
+## Statistical terms  
+i. *Research Survey* – A study done using statistical methods in order to understand certain problem.  
+ii. *Element* – Respondent/object on which data is taken.  
+iii. *Population* – All elements under study either living or non-living object.  
+iv.	*Sample* – Subset or part of population.  
+v. *Sampling frame* – A complete list of all elements in a population.  
+vi.	*Pilot survey* – A study done on a small scale before the actual survey.  
+vii. *Census* – A study done on the entire population.  
+viii. *Parameters* – a summary measure/characteristics obtained from population  
+ix.	*Statistics* – a summary measure/characteristics obtained from sample  
+x. *Variable/Attribute* – Characteristics of the population under study.  
+
+## Two types of variable:  
+1. Qualitative variable – measured according to their specific categories 
+or characteristics. Example: gender (male, female), marital status (single, married), race (Malay, Indian, Chinese), grade (A, B, C)  
+2. Quantitative variable – when the variable studied comes in term of numbers (numerical value) Example: number of student, total income, distance traveled, test mark etc.  
+Quantitative variable can further be classified as:  
+  
+    a.	Discrete – assume only exact values  
+        - Example: no. of student, annual sales, total income, shoe size, etc.  
+
+    b.	Continuous – can be expressed in a certain degree of accuracy  
+        - Example: Distance traveled litters of petrol, weight and height of children, etc.  
+
+<font color="blue">**Example 1:**</font>    
+Consider a population of 120,000 students in Terengganu. It was found that the mean height of the student is 148 cm and the variance is 1.5 cm . It also found that the mean height of 1,500 students in Dungun High School is 152 cm and the variance is 2 cm.  
+
+<center>  
+    Population – 120, 000 students in Terengganu  
+    Sample – 1,500 students in Dungun High School  
+    Element – student   
+    Variable – height of students  
+    
+</center>  
+
+## Parameter vs Statistic  
+
+> Parameter is a numerical measure used to describe a population.  
+
+> Statistic is a numerical measure used to describe a sample.  
+
+Below are some examples of parameter and statistic based on the information in the previous example.  
+
+|Parameter:|Statistics:|  
+|----------|-----------|  
+|i.	Population Size, N = 120,000|i.    Sample Size, n = 1,500|  
+|ii.	Mean, $\mu$ = 148 cm|ii.    Mean, $\bar{x}$ = 152 cm|  
+|iii.	Variance, $\sigma^2$ = 1.5 cm|iii.   Variance, $s^2$ = 2 cm|  
+
+
+## Data and Measurement  
+
+Data is a collection of observations, measurements or information obtained from study that is carried out.  
+
+### Sources of data:  
+
+> i. Primary data – data that is gathered and published for the first time by the researcher.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. satisfy the research objectives|i. very costly|  
+|ii. more up to date|ii. time consuming|  
+| |iii.	sensitive data is difficult to collect directly from the respondent|  
+
+> ii.	Secondary data – data that is obtained from other sources (not the researcher) such as from annual report, journal, newspaper, internet etc.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. easy to obtain|i. data might not satisfy the research objective|  
+|ii. less costly|ii. there might be errors committed by 	the original researchers.|  
+|iii.	can obtained in a large quantity| |  
+
+> Measurement is simply the act of determining the quantity of values of a variable or assigning number to a variable.  
+
+**Level of measurement:**  
+
+i. *Nominal* – qualitative as well as categorical  
+    - Example: gender (1= Male, 2= Female)  
+    
+ii.	*Ordinal* – categorical as well as essence of order (arranged in a certain order)  
+    - Example: level of education (1=Primary, 2=Secondary, 3=University, 4=Post-graduate)  
+    
+iii. *Interval* – categorical, has order that can describe ‘how much more or how much less’ of a characteristic and has the existence of an ‘arbitrary zero point’.  
+      - Example: level of satisfaction, temperature  
+    
+iv.	*Ratio* – consist of all the characteristics discussed above plus another characteristics of ‘absolute (true) zero point’  
+    - Example: height of students  
+    
+<font color="red">**Exercise 1:**</font>  
+
+1. Determine for the following whether you would use descriptive statistics or inferential statistics for the following information.  
+    a. A trainer wanted to determine the minimum time taken by his swimmers to swim 100m.  
+    b. An economist uses a bar chart to illustrate the loss made by an airline company from 1990 - 2000.  
+    c. A few botanists do a research on the relation between durian production and the usage of cow manure as fertilizer.  
+    d. Psychologists study whether urban students are higher achievers as compared to suburban students.  
+    e. Dewan Bandaraya Kuala Lumpur formed a committee to investigate the relation of flash floods occurrence and the amount of rubbish in Sungai Gombak and Sungai Kelang.  
+  
+2. Determine which of the following term is constant or variable. If it is a variable, determine whether it is quantitative or qualitative. If it is qualitative, determine whether it is discrete or continuous.  
+    a. Number of days in February.  
+    b. Marks to get grade B.  
+    c. Maximum marks to get grade B.  
+    d. Marital status of the workers in a firm.  
+    e. The length of 2000 screws in a production line  
+  
+## Sampling and Census  
+
+> a. Census - To study the whole population  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i.  Data collected from all elements.|i. Very costly and time consuming.|  
+|ii. Data are more complete.|ii. Result would be out to date.|  
+
+> b. Sampling - To study the sample. Sampling is the process of selecting a sample 	from a population.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Less costly and required less time.|i. Data not collected from all elements.|  
+|ii. Result is more up to date.|ii. Data are less complete.|  
+
+## Sampling Techniques  
+
+### Random Sampling (Probability Sampling)  
+
+> Every elements in the population has equal chance to be selected as sample.  
+
+#### a.	Simple Random Sampling (SRS)  
+
+> Sampling frame must be available.  
+
+Two methods can be used to randomly select n elements, where n is the sample size:  
+
+i. Lucky draw method  
+ii.	Random numbers  
+    
+<font color="blue">**Example 2:**</font>  
+A group of researcher planned to survey the family backgrounds of all students studying in UiTM. Due to time constraint, they decided to survey only 300 students. By using simple random sampling, discuss how they would select the sample.  
+
+Make a list of all the students who studying in UiTM. Assign each student a unique number, between 1 until the last students.  
+
+<font color="green">*Using lucky draw:*</font>  
+Write the numbers on a small slip of paper and deposit all the slips in a box. The first selection is made by drawing a slip out of the box without looking at it. This process is repeated until the sample size of 300 is chosen.  
+
+<font color="green">*Using random numbers:*</font>  
+
+1. Refer to a table of random numbers. Starting at any point in the table read across or down and notes every number that falls between that numbers. Use the numbers you have found to pull the names from the list that correspond to the 300 numbers you found. These 300 students are your sample. **OR**  
+
+2. Use random number generated by the computer software in order to select the sample. The person correspond to the numbers produced by the computer will be the sample.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Every element has equal chance to be selected.|i.	Not suitable for heterogeneous population.|  
+
+#### b. Systematic Random Sampling (SYRS)  
+
+> Sampling frame must be available. How to collect sample?  
+
+**Step**   
+
+1. Identify the population size (N), and sample size (n).  
+2. Obtained the range k by dividing the population size by the sample size.  
+    Sampling Interval, $k\ =\ \frac{N}{n}$  
+3. Randomly select one element from the first $k$ elements in the list (using SRS). Suppose the $r_{th}$ th element is selected.  
+4. Lastly sample every $k_{th}$ element in the population begins with the $r$ element until a sample of size n obtained. i.e., $r_{th},\ (r+k)_{th},\ (r+2k)_{th},\ ...,\ (r+(n-1)k)_{th}$  
+
+<font color="blue">**Example 3:**</font>  
+There are 200 elements in the population and a sample of 10 is desired. Discuss how the sample can be selected by using Systematic Random Sampling.  
+
+1. $N=200,\ n=10.$  
+2. Sampling Interval, $k\ =\ \frac{200}{10}\ =\ 20$  
+3. Randomly select a number between 1 and 20. By using SRS, let say we select number 2.  
+4. Then the sample shall consist of elements,  
+$$
+\begin{aligned}
+		&2, 2+20, 2+2(20), 2+3(20), ......................., 2+9(20) \\
+		&2,  22,  42,  62,  82,  102,  122,  142,  162,  182. \\
+\end{aligned}
+$$  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Every element has equal chance to be selected.|i.	More difficult to use.|  
+| |ii. In order to get a good sample, population must be properly arranged.|  
+
+#### c. Stratified Random Sampling  
+
+> Applicable for population that is categorized such as according to sex, races, etc.  
+
+Characteristics of the population:  
+
+* Elements in each stratum are homogeneous  
+* Elements between the strata are heterogeneous
+
+<font color="blue">**Example 4:**</font>  
+A group of research planned to survey all workers working in an 	industrial area. They are divided as followed. In order to save cost, they are decided to survey only 600 of the workers. Discuss how the sample can be selected by using stratified random sampling.  
+
+| Race | Sub Population Size | Number of Sample |  
+|:----:|:-------------------:|:----------------:|  
+| Malay | 2800 | $n_1\ =\ \frac{2800}{4500}\ *\ 600\ =\ 373$ |  
+| Chinese | 1250 | $n_1\ =\ \frac{1250}{4500}\ *\ 600\ =\ 167$ |  
+| Indian | 450 | $n_1\ =\ \frac{450}{4500}\ *\ 600\ =\ 60$ |  
+| Total | 4500 | 600 |  
+
+To sample each of the stratums, use either simple random sampling or systematic random sampling.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Every element has equal chance to be selected.|i.	More difficult to use.|  
+|ii.Suitable for categorized population.| |  
+
+#### d. Cluster Sampling  
+
+> Applicable for a population that is divided into homogeneous or similar cluster. Elements in the cluster are heterogeneous.  
+
+How to use cluster sampling?  
+
+- A population is divided into clusters (using naturally occurring geographic or other boundaries)  
+- Then clusters are randomly selected.  
+- A sample is collected by taking all elements in the selected clusters.  
+
+<font color="blue">**Example 5:**</font>  
+A group of researchers planned to survey all family in Kuala Besut, living in 50 villages. In order to save cost, they decide to survey only 10 villages. Discuss by using cluster sampling.  
+
+Suppose you divide district Kuala Besut into 50 villages. Then by using simple random sampling or systematic random sampling, select 10 villages from 50 villages. Sampled each (all) of the elements in 10 villages.
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Suitable for a population that is quite large.|i.	Difficult to ensure that cluster are similar/homogeneous|  
+|ii. Suitable for clustered population.| |  
+
+#### e. Multi-Stage Sampling  
+
+> Suitable for a large population. Selection done by stages.  
+
+<font color="blue">**Example 6:**</font>  
+A group of researchers planned to survey the background of all form 5 students in Terengganu. They decided to use sampling. Discuss.  
+
+Let say:  
+They randomly selected  
+
+1. Five districts from 11 districts in Terengganu.  
+2. 6 schools from each selected district.  
+3. 25 students from each selected school.  
+
+
+### Non-random Sampling (Non-probability Sampling)  
+
+> Not all elements in the population has equal chance to be selected as sample.  
+
+#### a. Quota Sampling  
+
+> Suitable to be used if sampling frame not available and in market research.  
+
+<font color="blue">**Example 7:**</font>  
+A group of researcher planned to survey 120 house-owners in Dungun who have been using Sharp washing machines for more than 2 years. Discuss.  
+
+`The numbers allocated for each group of respondents is based on the population statistics. The researcher has the flexibility to choose whomever he wants as long as the specifications set are met.`  
+      
+#### b. Convenience Sampling  
+
+> The researcher has the flexibility to select anybody that they wants or meets until the required sampled is obtained  
+
+#### c.	Judgmental Sampling  
+
+> The researcher selects a respondent whom he thinks has a certain characteristics that he wants to study  
+
+#### d.	Snowball Sampling  
+
+> An initial group of respondent is selected usually at random. After being interviewed, these respondents are asked to identify others who belong to the target population of interest.  
+
+## Data Collection Method  
+
+Generally there are 6 methods of data collection that can be used in order 	to collect the primary data. They are:  
+
+### i. Personal interview  
+
+> Researcher talks to the respondent face to face.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Produce the highest response rate.|i.	Very costly and time consuming.|  
+|ii. Can explain any unclear questions|ii. Interviewers must be properly trained.|  
+
+### ii.	Telephone interview  
+
+> Interviewer asks questions from a prepared questionnaire  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Less costly and required less time.|i. Appropriate only for population with telephones.|  
+|ii. Can contact respondents several times.|ii. Respondents might refuse to cooperate.|  
+
+### iii. Mailing  
+
+> A questionnaire is sent to each respondent with a stamped addressed envelope attached.  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Less costly.|i.	Response rate very low.|  
+|ii. Can be used in any population size.|ii. Unsure when the questionnaires shall come back.|  
+
+### iv.	Direct observation  
+
+> Respondents will be observed without their knowledge  
+
+| Advantages | Disadvantages |  
+|:-----------|:--------------|  
+|i. Data obtained very accurate.|i.	Very costly and time consuming.|  
+|ii. The access of information is not affected by the respondents.|ii. The observer needs to be highly skilled and unbiased|  
+
+### v. Direct Questionnaire  
+
+> The researcher gives the questionnaire directly to the respondent and waits for them to complete it.  
+
+### vi.	Other methods  
+
+> Electronic e-mail, internet survey and short messaging services (SMS).  
+
+## Designing A Questionnaire  
+
+Before you begin drafting your questionnaire, it is important to consider:  
+
+* Who is the questionnaire for?  
+* What is it intending to find out or measure?  
+
+Some guidelines in designing a questionnaire  
+
+a. Design questions to meet the objective of the research.  
+b. Questions must be short and clear.  
+c. Limit the number of questions.  
+d. Use language understood by any layman.  
+e. Doubled – Barreled Questions should be avoided. E.g. Do you think there is a good market for the product and that it will sell well? Could bring a “yes” response to the first part and a “no” response to the latter part.  
+f. Ambiguous Questions should be avoided. E.g. “To what extent would you say you are happy? Respondents might be unsure whether the question refers to their state of feelings at the workplace, or at home, or in general.  
+g. Avoid questions that might require respondents to recall experiences from the past, they may be unable to give correct answers and may be way off in his responses.  
+h. Leading questions should be avoided. E.g. Don’t you think that in these days of escalating costs of living, employees should be given good pay raises? By asking such a question, we are signalling and pressuring respondents to say “yes”. Another way of asking to elicit less biased responses would be: “To what extent do you agree that employees should be given higher pay raises?  
+
+
+<font color="red">**Exercise 2:**</font>  
+
+1. A researcher wishes to study the career aspirations of students from the 	Faculty of Accountancy, which consists of 50 classes. The researcher intends to choose only 10 classes and all the students from these 10 classes will be chosen for the study.  
+
+    i. State the population for the above study  
+    ii. State the variable for this study. What type of variable is it?  
+    iii. State the sampling technique that is used for this study.  
+
+2. A group of researchers from Yayasan ABC conducted a survey on their sponsored students who are currently pursuing their studies at local universities. The purpose of the study is to determine the average monthly amount spent on academic books by these students. A list of 350 students' names arranged alphabetically and addresses was obtained. A random sample of 70 students was selected from the list.  
+
+    i. State the population of the study.  
+    ii. State the variable mentioned in the study.  
+    iii. Suggest an appropriate sampling technique to be used.  
+    iv. Explain how the sampling technique chosen in (iii) is carried out.  
+    v. What is the most suitable data collection method to be used for the above study? Give one advantage and one disadvantage of this method.  
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

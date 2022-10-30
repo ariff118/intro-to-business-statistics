@@ -1,10 +1,85 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "Course Information"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## *Course Learning Outcomes*  
+
+At the end of the course, students should be able to:  
+
+- Explain the concept, the use and the application of basic statistical tools in descriptive and inferential statistics. (C2)  
+
+- Determine appropriate statistical solution and interpreting the real world problem. (C5)  
+
+- Propose the use of descriptive statistics in the area of computing. (A3)  
+
+## *Course Description*  
+
+This course introduces the basic statistical concepts in general applications. The topics include basic concepts of sampling methods, method of data collection, introductory methods in descriptive and inferential statistics. Specific topics include methods of describing data, correlation & regression analysis, time series analysis, index numbers and probability. Students will be exposed to statistical project which involve analyzing primary or secondary data in enhancing their understanding in solving real problems. Statistical Analysis using Excel or SPSS will be introduced.  
+
+## *Syllabus Content*  
+
+1. Introduction to Statistics  
+    - Definition of statistics  
+    - Terms in statistics  
+    - Types of statistics  
+    - Sources of data  
+    - Types of variable  
+    - Scale of measurement  
+    - Sampling techniques  
+    - Data Collection Methods  
+2. Describing Data  
+    - Data organization and presentation  
+    - Measures of Central Tendency  
+    - Measures of Location  
+    - Measures of Dispersion  
+    - Measures of Skewness  
+3. Correlation & Simple Linear Regression  
+    - Correlation (Pearson’s Product Moment Correlation)  
+    - Simple linear regression  
+4. Index Numbers  
+    - Types of index numbers  
+    - Calculate and explain unweighted index numbers  
+    - Calculate and explain weighted index number  
+5. Time Series Analysis  
+    - Component of time series  
+    - Multiplicative time series model  
+    - Trend Analysis (Moving Average Method)  
+    - Seasonal Variations  
+    - Forecasting  
+6. Probability  
+    - Set theory  
+    - Addition rules  
+    - Multiplication rules and conditional probability  
+    - Counting Rules (Permutation and Combination)  
+    - Tree Diagram  
+    - Bayes’ Theorem  
+
+## *Teaching Methodology*  
+Lectures, Tutorial, Discussion  
+
+## *Assessment*  
+
+| **ITEM**                            | **WEIGHT** | **REMARK **    |
+|:-----------------------------------:|:----------:|:--------------:|
+| Test 1 (Topic 1 & 2)                | 15%        | CLO1           |
+| Test 2 (Topic 3 & 5)                | 15%        | CLO2           |
+| Quiz (Topic 4)                      | 5%         | CLO2           |
+| Assignment (Topic 6)                | 5%         | CLO2           |
+| Group Project (Topic 1 & Topic 2)   | 10%        | CLO3           |
+| Final Examination                   | 50%        |                |  
+
+## *Recommended Text*  
+1. Allan Bluman, Elementary Statistics: A Step By Step Approach, 8, McGraw-Hill Science/Engineering/Math, 2013, ISBN: 0073534986  
+
+## *References*  
+1. William G Marchal, Samuel A Wathen Douglas A Lind, Statistical Techniques in Business and Economics - 13th Edition, 13, McGraw Hill Companies, 2007, ISBN: 9780070667075.  
+2. Prem S. Mann, Introductory Statistics, 8, John Wiley & Sons, 2010, ISBN: 97804704446652.  
+3. Muhammad Rozi, M & Faridah, A.H, Business Statistics, Oxford Fajar Bakti Sdn. Bhd, 2011, ISBN: 13-97898345093. 
+4. Lau Too Kya, Phang Yook Ngor, Zainuddin Awang, Statistics for UiTM, 2, Penerbit Fajar Bakti Sdn. Bhd., 2009, ISBN: n/a  
+5. Halilah Haron, Understanding Statistics with SPSS, 1, University Publication Center (UPENA), 2010, ISBN: 9789673631520.  
+
+***  
